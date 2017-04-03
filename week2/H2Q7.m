@@ -5,7 +5,7 @@ I = imread('digital-images-week2_quizzes-lena.gif');
 % show image
 subplot(2,2,1);
 imshow(I);
-title("original")
+title('original')
 
 % save image as new image
 imwrite(I,'new.png')
@@ -24,7 +24,7 @@ Icrop = I(80:250,70:250);
 %show croped image
 subplot(2,2,2);
 imshow(Icrop);
-title("croped image");
+title('croped image');
 
 
 
@@ -47,12 +47,12 @@ new5 = imfilter(idouble, h5, 'replicate');
 %show 3x3 image
 subplot(2,2,3);
 imshow(new3);
-title("filtered 3x3");
+title('filtered 3x3');
 
 %show 3x3 image
 subplot(2,2,4);
 imshow(new5);
-title("filtered 5x5");
+title('filtered 5x5');
 
 
 squarederror = (idouble - new3).^2;
